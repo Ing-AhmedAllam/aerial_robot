@@ -1,0 +1,7 @@
+package:
+  ["essam_quad"]
+
+essam_quad:
+  input: ["urdf/robot.urdf.xacro"]
+  filename: [""]
+  meshdir: "urdf/mesh"

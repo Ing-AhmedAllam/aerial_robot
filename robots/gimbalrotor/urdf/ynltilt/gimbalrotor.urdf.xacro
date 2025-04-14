@@ -23,7 +23,7 @@
 
     ## link
     <link name="base_link">
-    ## inertial of no attachment
+      ## inertial of no attachment
       <inertial>
         <origin xyz="0.00009021 -0.00005299 0.04639014" rpy="0 0 0"/>
         <mass value="1.16544411"/>
@@ -31,7 +31,7 @@
             ixx="0.01251517" iyy="0.01254829" izz="0.01920936"
             ixy="-0.00000046" ixz="-0.00000278" iyz="-0.00001104"/>
       </inertial>
-    ## inertial with pruning tools
+      ## inertial with pruning tools
       <!-- <inertial> -->
       <!--   <origin xyz="0.05514 0.00149 0.03734" rpy="0 0 0"/> -->
       <!--   <mass value="1.38734"/> -->

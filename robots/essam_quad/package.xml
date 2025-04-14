@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>essam_quad</name>
+  <version>1.3.3</version>
+  <description>The basic packages for mini quadrotor</description>
+
+  <maintainer email="ahmed.18allam@gmail.com">Ahmed Essam Allam</maintainer>
+  <license>BSD</license>
+  <url type="website">https://github.com/Ing-AhmedAllam/aerial_robot</url>
+  <author email="ahmed.18allam@gmail.com">Bakui Chou</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>mujoco_ros_control</build_depend>
+
+  <run_depend>aerial_robot_base</run_depend>
+  <run_depend>aerial_robot_control</run_depend>
+  <run_depend>aerial_robot_estimation</run_depend>
+  <run_depend>aerial_robot_model</run_depend>
+  <run_depend>aerial_robot_msgs</run_depend>
+  <run_depend>aerial_robot_simulation</run_depend>
+
+  <test_depend>rostest</test_depend>
+
+</package>
