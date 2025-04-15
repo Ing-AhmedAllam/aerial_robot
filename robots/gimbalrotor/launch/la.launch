@@ -1,0 +1,4 @@
+<launch>
+    <node name="gripper" type="vim2ard.py" pkg="gimbalrotor" output="screen"/>
+</launch>
+

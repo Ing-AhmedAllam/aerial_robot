@@ -65,6 +65,9 @@
     <param name="main_rate" value="40"/>
   </node>
 
+  ###########     Gripper     ###########
+  <node name="gripper" type="vim2ard.py" pkg='gimbalrotor'/>
+
   ###########  Robot Model  ###########
   <arg name="description_mode" value="urdf" unless="$(arg simulation)" />
   <arg name="description_mode" value="gazebo" if="$(arg simulation)" />
