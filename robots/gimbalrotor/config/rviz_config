@@ -117,8 +117,8 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
       Name: RobotModel
-      Robot Description: gimbalrotor/robot_description
-      TF Prefix: gimbalrotor
+      Robot Description: gimbalrotor1/robot_description
+      TF Prefix: gimbalrotor1
       Update Interval: 0
       Value: true
       Visual Enabled: true
