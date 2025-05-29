@@ -65,12 +65,6 @@
     <param name="main_rate" value="40"/>
   </node>
 
-  ###########  Pruning Servo by Kamada ###########
-  <node pkg="aerial_robot_base" 
-        type="prune_servo_listener.py" 
-        name="dynamixel_controller" 
-        output="screen">
-  </node>
 
   ###########  Robot Model  ###########
   <arg name="description_mode" value="urdf" unless="$(arg simulation)" />
@@ -94,14 +88,14 @@
   ###########  Servo Bridge  ###########
   <node pkg="aerial_robot_model" type="servo_bridge_node" name="servo_bridge" ns="$(arg robot_ns)" output="screen" />
 
-  ###########  Ros Serial  ###########
+  <!-- ###########  Ros Serial  ###########
   <node pkg="rosserial_python" type="serial_node.py" name="nano_serial">
-    <param name="port" value="/dev/ttyUSB0"/>   <!-- Replace with actual device path -->
-    <param name="baud" value="57600"/>          <!-- Match the baud rate in your Arduino sketch -->
+    <param name="port" value="/dev/ttyUSB1"/>   
+    <param name="baud" value="57600"/>          
   </node>
 
   ###########  Gripper Control  ###########
-  <node pkg="gimbalrotor" type="comm2nano.py" name="comm2nano" output="screen"/>
+  <node pkg="gimbalrotor" type="comm2nano.py" name="comm2nano" output="screen"/> -->
 
   ########## Simulation in Gazebo #########
   <include file="$(find aerial_robot_simulation)/launch/gazebo.launch" if = "$(eval arg('simulation') and not arg('real_machine'))" >
