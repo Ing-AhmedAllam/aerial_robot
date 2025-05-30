@@ -26,9 +26,9 @@ controller:
     force_landing_descending_rate: -0.5
 
   roll_pitch:
-    p_gain: 2.5 #20 #15
+    p_gain: 20 #8.0 #20 #15
     i_gain: 0.1 #1
-    d_gain: 1.5 #15.0 #10
+    d_gain: 19 #7.5 #15.0 #10
     limit_sum: 100.0
     limit_p: 100.0
     limit_i: 100.0

@@ -25,8 +25,11 @@
     <link name="base_link">
       <!--With my rigid gripper-->
       <inertial>
-        <origin
+        <!-- <origin
         xyz="3.95828034850908E-05 -6.17963982363953E-05 -0.000261534799783802"
+        rpy="0 0 0" /> -->
+        <origin
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
         value="2.75029997684925" />
