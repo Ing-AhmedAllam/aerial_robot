@@ -88,14 +88,14 @@
   ###########  Servo Bridge  ###########
   <node pkg="aerial_robot_model" type="servo_bridge_node" name="servo_bridge" ns="$(arg robot_ns)" output="screen" />
 
-  <!-- ###########  Ros Serial  ###########
+  ###########  Ros Serial  ###########
   <node pkg="rosserial_python" type="serial_node.py" name="nano_serial">
-    <param name="port" value="/dev/ttyUSB1"/>   
+    <param name="port" value="/dev/ttyACM0"/>   
     <param name="baud" value="57600"/>          
   </node>
 
   ###########  Gripper Control  ###########
-  <node pkg="gimbalrotor" type="comm2nano.py" name="comm2nano" output="screen"/> -->
+  <node pkg="gimbalrotor" type="comm2nano.py" name="comm2nano" output="screen"/>
 
   ########## Simulation in Gazebo #########
   <include file="$(find aerial_robot_simulation)/launch/gazebo.launch" if = "$(eval arg('simulation') and not arg('real_machine'))" >

@@ -156,13 +156,13 @@ if __name__=="__main__":
                                 gripper.publish(False)
                                 msg = "send close gripper hand command"
                         if key == 'm':
-                                msg = "pose/velocity?P/v"
+                                msg = "pose/velocity?P/v\n"
                                 printMsg(msg)
-                                cmd = input()
+                                cmd = input("")
                                 if cmd == 'p' or cmd == 'P' or cmd == '\n':
-                                        msg = "x, y and z?x,y,z"
+                                        msg = "x, y and z?x,y,z\n"
                                         printMsg(msg)
-                                        targ = input()
+                                        targ = input("")
                                         tx,ty,tz = targ.split(',')
                                         nav_msg.pos_xy_nav_mode = 2
                                         nav_msg.pos_z_nav_mode = 2
@@ -170,7 +170,7 @@ if __name__=="__main__":
                                         nav_msg.target_pos_y = float(ty)
                                         nav_msg.target_pos_z = float(tz)
                                         nav_pub.publish(nav_msg)
-                                        msg = "send traget move command"
+                                        msg = f"send traget move command {float(tx)}, {float(ty)}, {float(tz)}\n"
                                 elif cmd == 'v' or cmd == 'V':
                                         msg = "not implemented yet"
                         if key == '\x03':
